@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.card:active {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+.card h2 {
+    color: #b00;
+    margin-top: 10px;
+    text-shadow: 1px 6px 11px rgba(0, 0, 0, 0.5);
+}
+.card p {
+    font-size: 1em;
+    color: #333;
+    font-family: sans-serif;
+}
+.community-card {
+    background-color: #ffffe0;
+}
+.competition-card {
+    background-color: #e0ffff;
+}
+@media (max-width: 710px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "liveevents.css" >
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class = "back-button">
+                <span class = "backgo">&larr;</span><b>Live Events</b>
+            </div>
+        </header>
+        <div class="content">
+            <h2 style="text-align: center;">Designing Competition Overview</h2>
+            <p>Welcome to the [Competition Name] Design Competition! This is an exciting opportunity for designers from all backgrounds and skill levels to showcase their creativity, innovation, and talent. Whether you're a seasoned professional or a budding designer, we invite you to participate and stand a chance to win amazing prizes.</p>
+            <h3>Theme</h3>
+            <p>The theme for this year's competition is Gen Z. Participants are encouraged to explore this theme in their designs, pushing the boundaries of creativity and originality.</p>
+            <h3>Eligibility</h3>
+            <p>The competition is open to designers worldwide. Participants can enter individually or as part of a team.</p>
+            <h3>Submission Guidelines</h3>
+            <ul>
+                <li><b>Format:</b> All designs must be submitted in [Format(s) e.g., JPEG, PNG, PDF, etc.].</li>
+                <li><b>Dimensions:</b> The design should be [Dimensions, e.g., 1080x1080 pixels, A4 size, etc.].</li>
+                <li><b>Deadline:</b> The submission deadline is [Deadline Date and Time].</li>
+                <li><b>How to Submit:</b> Upload your designs to [Submission Platform/Link] with the following details:
+                    <ul>
+                        <li>Your Name/Team Name</li>
+                        <li>Contact Information</li>
+                        <li>Design Title</li>
+                        <li>Brief Description of the Design (100-200 words)</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Judging Criteria</h3>
+            <p>Designs will be evaluated based on the following criteria:</p>
+            <ul>
+                <li>Creativity and Originality</li>
+                <li>Relevance to the Theme</li>
+                <li>Visual Appeal</li>
+                <li>Overall Impact</li>
+            </ul>
+            <h3>Terms and Conditions</h3>
+            <p>All submitted designs must be original and created by the participant(s). All the submitted designs should be new.</p>
+            <h3>Contact Us</h3>
+            <p>For any inquiries, please contact us at [Contact Email] or visit our website [Website URL].</p>
+            <p>We look forward to seeing your incredible designs and celebrating the creative talent within our community. Good luck to all participants!</p>
+            <h2 style = "text-align: center;">Submission Form</h2>
+            <form  class ="submission" action="[Submission URL]" method="post" enctype="multipart/form-data">
+                <label for="name">  Your Name/Team Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="contact">  Contact Information:</label><br>
+                <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required><br><br>
+                <label for="title">  Design Title:</label><br>
+                <input type="text" id="title" name="title" required><br><br>
+                <label for="description">  Brief Description of the Design (100-200 words):</label><br>
+                <textarea id="description" name="description" rows="4" required></textarea><br><br>
+                <label for="file">  Upload Design:</label><br>
+                <input type="file" id="file" name="file" accept="[Accepted Formats]" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+       
+    </div>
+
+    
+    <script src = "liveevents.js"></script>
+</body>
+</html>
